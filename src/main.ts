@@ -9,6 +9,9 @@ async function bootstrap() {
       whitelist: true, // Tự động loại bỏ các field khi không dc khai báo  decorater
       forbidNonWhitelisted: true, // Nếu field không được khai báo trong DTO thì sẽ báo lỗi
       transform: true, //TỰ động chuyển hóa dữ liệu được khai báo trong DTO
+      transformOptions: {
+        enableImplicitConversion: true, //
+      },
       exceptionFactory: (validationErrors) => {
         console.log(validationErrors)
         return new UnprocessableEntityException(
