@@ -17,9 +17,9 @@ class ConfigSchema {
   @IsString()
   DATABASE_URL: string
   @IsString()
-  ACCESS_TOKENN_SECRET: string
+  ACCESS_TOKEN_SECRET: string
   @IsString()
-  ACCESS_TOKENN_SECRET_IN: string
+  ACCESS_TOKEN_SECRET_IN: string
   @IsString()
   REFRESH_ACCESS_TOKEN_SECRET: string
   @IsString()

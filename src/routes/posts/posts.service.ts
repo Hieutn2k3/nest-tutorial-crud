@@ -8,7 +8,6 @@ import { PrismaService } from 'src/shared/services/prisma.service'
 export class PostsService {
   constructor(private readonly prismaService: PrismaService) {}
   getPosts() {
-    console.log('first', envConfig.ACCESS_TOKENN_SECRET_IN)
     return this.prismaService.post.findMany()
   }
   createPosts(body: any) {
