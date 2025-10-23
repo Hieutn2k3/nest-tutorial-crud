@@ -28,6 +28,7 @@
 ## Project setup
 
 ```bash
+$ npx prisma generate
 $ npm install
 ```
 
